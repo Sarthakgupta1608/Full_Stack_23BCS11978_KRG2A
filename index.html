@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Portfolio</title>
-   </head>
-   <body>
-      <header>
-         <h1>Sarthak</h1>
-         <p>Hello, I am a Computer Science student at Chandigarh University.</p>
-      </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 20px 0;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-      <section>
-         <h2>About Me</h2>
-         <p>I am a detail-oriented developer with a passion for coding and problem-solving. I specialize in front-end development with experience in HTML, CSS, and JavaScript.</p>
-      </section>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer passionate about creating interactive and user-friendly websites.</p>
+        </section>
 
-      <section>
-         <h2>Links</h2>
-         <ul>
-            <li><a href="https://github.com/tusharsach16" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/tushar-2151b1343" target="_blank">LinkedIn</a></li>
-         </ul>
-      </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h3>To-Do App</h3>
+                    <p>A simple yet effective task manager using local storage.</p>
+                </div>
+                <div class="card">
+                    <h3>Weather App</h3>
+                    <p>Fetches live weather data from an API and displays it beautifully.</p>
+                </div>
+            </div>
+        </section>
 
-      <section>
-         <h2>Qualifications</h2>
-         <table>
-            <thead>
-            <tr>
-               <th>Degree</th>
-               <th>Institution</th>
-               <th>Year</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-               <td>Computer Science</td>
-               <td>Chandigarh University</td>
-               <td>2023</td>
-            </tr>
-            <tr>
-               <td>Intermediate</td>
-               <td>Sant Gyaneshwar</td>
-               <td>2022</td>
-            </tr>
-            </tbody>
-         </table>
-      </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
+        </section>
+    </div>
 
-      <section>
-         <h2>Projects</h2>
-         <ul>
-            <li>Portfolio Website - A responsive site built with HTML/CSS/JS</li>
-            <li>Task Manager App - A to-do list using JavaScript</li>
-            <li>Weather Dashboard - Displays live weather using APIs</li>
-         </ul>
-      </section>
-
-      <section>
-         <h2>Skills</h2>
-         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Node.js</li>
-            <li>Git & GitHub</li>
-         </ul>
-      </section>
-
-      <section>
-         <h2>Contact Me</h2>
-         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-         </form>
-      </section>
-
-   </body>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
 </html>
